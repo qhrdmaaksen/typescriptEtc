@@ -3,7 +3,7 @@
 // **********************************************
 // 숫자 또는 부울일 수 있는 highScore 라는 변수를 만듭니다.
 
-let hightScore: number | boolean ;
+let hightScore: number | boolean;
 hightScore = 1;
 hightScore = false;
 
@@ -58,7 +58,7 @@ type RGB = {
 
 type HSL = {
 	h: number,
-	s:number,
+	s: number,
 	l: number,
 }
 
@@ -67,15 +67,15 @@ const colors: (RGB | HSL)[] = []
 // **********************************************
 // ******************* PART 6 *******************
 // **********************************************
-// 단일 문자열 또는 문자열 배열을 받아들이는 greet라는 함수를 작성하십시오.
+// 단일 문자열 또는 문자열 배열을 받아들이는 greet 라는 함수를 작성하십시오.
 // 해당 한 사람에 대해 "Hello, <name>"을 인쇄하거나 배열의 각 사람에게 동일한 형식으로 인사해야 합니다.
 
 const greet = (person: string | string[]): void => {
 	if (typeof person === 'string') {
-		console.log('Hello, ' + person)
+		console.log(`'Hello,  ${person}`)
 	} else {
-		person.forEach((n) => {
-			console.log('Hello, ' + n)
-		})
+		for (let p of person) {
+			console.log(`'Hello,  ${p}`)
+		}
 	}
 }
