@@ -34,6 +34,12 @@ const isDelivered = (status: OrderStatus) => {
 console.log(isDelivered(OrderStatus.DELIVERED)) // true
 console.log(isDelivered(OrderStatus.RETURNED)) // false
 
+const order = {
+	orderNumber: 123,
+	status: OrderStatus.SHIPPED,
+}
+console.log(order.status) // 1
+
 enum ArrowKeys {
 	UP = 'UP',
 	DOWN = 'DOWN',
@@ -41,3 +47,5 @@ enum ArrowKeys {
 	RIGHT = 'RIGHT',
 }
 const myArrowKeys = ArrowKeys.UP // 'UP'
+
+
