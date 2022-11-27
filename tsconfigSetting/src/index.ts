@@ -14,3 +14,7 @@ const norma: Chicken ={
 	name: 'Norma',
 	age: 12,
 }
+
+let users: string[] = ['vitamin', 'tom', 'jerry']
+// users = null;
+// users = undefined;
